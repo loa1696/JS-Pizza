@@ -1,22 +1,53 @@
-@mainColor: blue;
-
-body{
-
-}
+@mainColor: #ffc1ab;
+@footerColor: #f9deff;
 @import "pizza/pizza-card";
 
-header{
-  padding: 20px 0;
+
+.top-panel {
+  background: rgba(121, 55, 104, 0.8);
 }
-.navbar{
-
-
+.nav{
 
 }
-.col-md-3 .col-xs-6{
-
-  float:left;
+.main-container{
+  padding-top: 80px;
 }
-.panel-body{
+
+.left-panel{
+  padding-left:120px;
+
+  .pizza-list{
+    text-align: center;
+    padding-top: 50px;
+  }
+
+}
+.right-panel {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  padding-top: 35px;
+  margin-left: 20px;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+
+  min-width: 260px;
   height: 100%;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) -3px 3px 10px;
+
+  z-index: 1000;
+
+  .order-list-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 15px;
+  }
+}
+footer{
+  background-color:@footerColor ;
+  height: 50px;
+  text-align: center;
 }

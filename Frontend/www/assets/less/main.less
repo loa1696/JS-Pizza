@@ -1,13 +1,39 @@
-@mainColor: #ffc1ab;
-@footerColor: #f9deff;
+@mainColor: #29b6b5;
+@secondColor:rgba(28, 148, 157, 0.49);
+@gradientColor: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(41, 182, 181,0.8)), to(rgba(255,255,255,0.8)));;
+@textColor:#238584;
 @import "pizza/pizza-card";
 
+*{
+  font-family: "Comic Sans MS";
+
+}
+.top-text{
+  color: @textColor;
+}
 
 .top-panel {
-  background: rgba(121, 55, 104, 0.8);
+  background: @gradientColor;
+  height: 70px;
+  border:none;
+  text-align: center;
+}
+.text{
+  text-decoration: none;
+  width: 40%;
+  height:30px;
+  resize: none;
+  margin: 5px;
+  border-radius: 0 10px ;
+  border:2px solid @mainColor ;
+  float: left;
+  color: @textColor;
+
 }
 .nav{
-
+  .li {
+    color: @textColor;
+  }
 }
 .main-container{
   padding-top: 80px;
@@ -47,7 +73,114 @@
   }
 }
 footer{
-  background-color:@footerColor ;
-  height: 50px;
+  background-color:@secondColor ;
+  height: 100px;
   text-align: center;
+}
+
+
+
+.style1 {
+  background-color: @secondColor;
+  height: 100px;
+  padding: 5px;
+  margin: 3px;
+  width: 100%;
+  text-align: center;
+  float: left;
+  border-radius: 0 10px ;
+  box-shadow: 4px -4px 3px @mainColor;
+}
+
+.box{
+  display: inline-block;
+}
+.area {
+  width:80%;
+  height:30px;
+  resize: none;
+  margin: 5px;
+  border-radius: 0 10px ;
+  border:2px solid @mainColor ;
+  float: left;
+}
+.button {
+  background: @gradientColor;;
+  -webkit-border-radius: 30px;
+  margin-top: 15px;
+  border: 2px solid @mainColor;
+  color: white;
+}
+.addButton{
+  background: @gradientColor;
+  -webkit-border-radius: 30px;
+  margin-top: 15px;
+  border: 2px solid @mainColor;
+  color: white;
+}
+.button-plus {
+  background: @gradientColor;
+  -webkit-border-radius: 30px ;
+  margin-top: 15px;
+  border:2px solid #29b6b5 ;
+  color: white;
+}
+.button-minus {
+  background: @gradientColor;
+  -webkit-border-radius: 30px;
+  margin-top: 15px;
+  border: 2px solid #29b6b5;
+  color: white;
+}
+.button-buy {
+  background: @gradientColor;
+  -webkit-border-radius: 30px;
+  margin-top: 15px;
+  border: 2px solid #29b6b5;
+  color: white;
+}
+.button-not-buy {
+  background: @gradientColor;
+  -webkit-border-radius: 30px;
+  margin-top: 15px;
+  border: 2px solid #29b6b5;
+  color: white;
+}
+.button-delete {
+  background: @gradientColor;
+  -webkit-border-radius: 30px ;
+  margin-top: 15px;
+  border:2px solid #29b6b5 ;
+  color: white;
+}
+.counter {
+  background-color: white;
+  border-radius:  5px ;
+  border: none;
+  padding: 2px;
+  width: 100%;
+  text-align: center;
+ color: @textColor ;
+}
+.square {
+  width: auto;
+  background-color:@mainColor ;
+  border-radius:  5px ;
+  border-color: white;
+  text-align: center;
+  color: white;
+  padding: 2px;
+
+
+
+
+}
+.square1 {
+
+  background-color:#29b6b5 ;
+  border-radius:  5px ;
+  border:none ;
+  text-align: center;
+  color: white;
+
 }

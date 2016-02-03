@@ -2,6 +2,7 @@
  * Created by chaika on 02.02.16.
  */
 var Templates = require('../Templates');
+var Storage = require('../Storage');
 
 //Перелік розмірів піци
 var PizzaSize = {
@@ -41,7 +42,10 @@ function initialiseCart() {
     //Фукнція віпрацьвуватиме при завантаженні сторінки  ВСТАВИТИ З ПРЕЗЕНТАЦІЇ
     //Тут можна наприклад, зчитати вміст корзини який збережено в Local Storage то показати його
     //TODO: ...
-
+    var saved_pizza = Storage.get('cart');
+    if(saved_pizza){
+        Cart = saved_pizza;
+    }
     updateCart();
 }
 
@@ -75,6 +79,7 @@ function updateCart() {
     }
 
     Cart.forEach(showOnePizzaInCart);
+    Storage.set("cart", Cart);
 
 }
 

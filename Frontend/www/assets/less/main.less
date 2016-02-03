@@ -29,6 +29,7 @@
   height: 70px;
   border:none;
   text-align: center;
+  z-index: 10;
 }
 .text{
   text-decoration: none;
@@ -74,7 +75,7 @@ text-align: center;
   right: 0;
   bottom: 0;
 
-  padding-top: 35px;
+
   margin-left: 20px;
   padding-right: 0px !important;
   padding-left: 0px !important;
@@ -102,14 +103,19 @@ footer{
 
 .style1 {
   background-color: @secondColor;
-  height: 100px;
+  height: 50px;
   padding: 5px;
   margin: 3px;
   width: 100%;
   text-align: center;
-  float: left;
   border-radius: 0 10px ;
   box-shadow: 4px -4px 3px @mainColor;
+  #foot{
+    position: fixed !important;
+    right: 0;
+    bottom: 0;
+  }
+
 }
 
 .box{

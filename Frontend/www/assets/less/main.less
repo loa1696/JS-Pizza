@@ -1,19 +1,28 @@
-@mainColor: #29b6b5;
-@secondColor:rgba(28, 148, 157, 0.49);
-@gradientColor: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(41, 182, 181,0.8)), to(rgba(255,255,255,0.8)));;
-@textColor:#238584;
+@mainColor: #337ab7;;
+@secondColor:rgba(64, 152, 226, 0.49);
+@gradientColor: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(51, 122, 183,0.8)), to(rgba(255,255,255,0.8)));;
+@textColor: #23547c;;
 @import "pizza/pizza-card";
 
 *{
   font-family: "Comic Sans MS";
 
 }
+.param {
+
+  float: left;
+}
+.flex-container {
+  display: flex;
+  flex-flow: column wrap;
+}
+
 .image{
   max-width: 100px;
 }
 .top-text{
   color: @textColor;
-
+  display: inline-block;
 }
 #sing{
   margin-right: 50px;
@@ -21,7 +30,6 @@
   -webkit-border-radius: 30px;
   border: 2px solid @mainColor;
   color: white;
-
   weight: 100% ;
 }
 .top-panel {
@@ -75,7 +83,7 @@ text-align: center;
   right: 0;
   bottom: 0;
 
-flex-box: ; погуглити
+//flex-box: ; погуглити
   margin-left: 20px;
   padding-right: 0px !important;
   padding-left: 0px !important;
@@ -94,9 +102,17 @@ flex-box: ; погуглити
   }
 }
 footer{
-  background-color:@secondColor ;
+  padding-right: 330px!important;
+  background:  -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,0.8)), to(rgba(51, 122, 183,0.8)));
   height: 100px;
   text-align: center;
+  p{
+    display: block;
+    -webkit-margin-before: 3em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+  }
 }
 
 
@@ -148,35 +164,35 @@ footer{
   background: @gradientColor;
   -webkit-border-radius: 30px ;
   margin-top: 15px;
-  border:2px solid #29b6b5 ;
+  border:2px solid @textColor ;
   color: white;
 }
 .button-minus {
   background: @gradientColor;
   -webkit-border-radius: 30px;
   margin-top: 15px;
-  border: 2px solid #29b6b5;
+  border: 2px solid @textColor;
   color: white;
 }
 .button-buy {
   background: @gradientColor;
   -webkit-border-radius: 30px;
   margin-top: 15px;
-  border: 2px solid #29b6b5;
+  border: 2px solid @textColor;
   color: white;
 }
 .button-not-buy {
   background: @gradientColor;
   -webkit-border-radius: 30px;
   margin-top: 15px;
-  border: 2px solid #29b6b5;
+  border: 2px solid @textColor;
   color: white;
 }
 .button-delete {
   background: @gradientColor;
   -webkit-border-radius: 30px ;
   margin-top: 15px;
-  border:2px solid #29b6b5 ;
+  border:2px solid @textColor ;
   color: white;
 }
 .counter {
@@ -203,7 +219,7 @@ footer{
 }
 .square1 {
 
-  background-color:#29b6b5 ;
+  background-color:@textColor ;
   border-radius:  5px ;
   border:none ;
   text-align: center;

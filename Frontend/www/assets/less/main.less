@@ -3,16 +3,16 @@
 @gradientColor: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(51, 122, 183,0.8)), to(rgba(255,255,255,0.8)));;
 @textColor: #23547c;;
 @import "pizza/pizza-card";
+@import "pizza/header";
 
 *{
   font-family: "Comic Sans MS";
-
+ color:@textColor;
 }
 .param {
 
   float: left;
 }
-
 
 .image{
   max-width: 100px;
@@ -21,21 +21,8 @@
   color: @textColor;
   display: inline-block;
 }
-#sing{
-  margin-right: 50px;
-  background: @mainColor;;
-  -webkit-border-radius: 30px;
-  border: 2px solid @mainColor;
-  color: white;
-  weight: 100% ;
-}
-.top-panel {
-  background: @gradientColor;
-  height: 70px;
-  border:none;
-  text-align: center;
-  z-index: 10;
-}
+
+
 .text{
   text-decoration: none;
   width: 40%;
@@ -52,6 +39,9 @@
 }
 .nav{
 
+  #all{
+    text-align: center;
+  }
 
   .li {
     color: @textColor;
@@ -60,7 +50,7 @@ text-align: center;
   }
 }
 .main-container{
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 .left-panel{
@@ -107,12 +97,12 @@ text-align: center;
   //}
   .flex-container {
     display: -webkit-flex;
-    //flex-flow: column wrap;
+
     display: flex;
     -webkit-flex-direction: column;
     flex-direction: column;
 
-    //height: 240px;
+
 
 
   }

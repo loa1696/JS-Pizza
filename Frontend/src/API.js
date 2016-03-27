@@ -37,4 +37,5 @@ exports.getPizzaList = function(callback) {
 
 exports.createOrder = function(order_info, callback) {
     backendPost("/api/create-order/", order_info, callback);
+    //var order_info=req_body;
 };

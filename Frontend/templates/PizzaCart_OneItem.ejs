@@ -1,9 +1,39 @@
+
+
+<div class="sidePizza" id="cart">
+    <!--id="cart"-->
+    <!--make a cover for all sidePizzas-->
+<span>
+    <!--write pizzas' size in ukr-->
+    <%var pizzaSizeUkr;%>
+    <% if(size=="big_size"){
+        pizzaSizeUkr="Велика";
+    }else{
+        pizzaSizeUkr="Мала";
+    }%>
+<h4><%= pizza.title %> (<%= pizzaSizeUkr %>)</h4>
 <div>
-    <%= pizza.title %> (<%= size %>)
-    <div>Ціна: <%= pizza[size].price %> грн.</div>
-    <div>
-        <button class="btn btn-danger minus">-</button>
-        <span class="label label-default"><%= quantity %></span>
-        <button class="btn btn-success plus">+</button>
-    </div>
+    <img src="assets/images/size-icon.svg"> <span><%= pizza[size].size %></span>
+    <img src="assets/images/weight.svg" style="margin-left: 10px"> <span><%= pizza[size].weight %></span>
+</div>
+<span id="price"><b><%= pizza[size].price %> грн.</b></span>
+<span class="btn-group" role="group" style="margin: 10px">
+<button type="button" class="btn btn-danger btn-xs minus" style="border-radius: 20px; margin-top: 5px" id="minus">
+    <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+</button>
+<span style="margin: 5px; float: left" id="quantity"><b><%= quantity %></b></span>
+<button type="button" class="btn btn-success btn-xs plus" style="border-radius: 20px; margin-top: 5px" id="plus">
+    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+</button>
+</span>
+
+
+</button>
+</span>
+<span>
+    <% var str = pizza.icon; %>
+    <% var arr=str.split(".");%>
+    <%var picture_name=arr[0]+"_half.jpg";%>
+<img src=<%=picture_name%>>
+</span>
 </div>

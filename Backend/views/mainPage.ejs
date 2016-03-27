@@ -1,7 +1,76 @@
-<% include common/header.ejs %>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Pizza</title>
 
-<div class="">
-    Main Page Content
+    <!-- Bootsrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- LESS основний файл -->
+    <link rel="stylesheet/less" type="text/css" href="assets/less/main.less"/>
+    <!-- LESS JavaScript компілятор -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-7 col-sm-8 col-md-9">
+            <% include common/header.ejs %>
+            <!--<div class="navbar navbar-fixed-top top-panel upperPanel">-->
+            <!--<span class="label label-warning" style="margin-left: 5px">PIZZA KMA</span>-->
+            <!--<div style="display: inline-block ; width: 90%">-->
+            <!--<span class="inf phoneNumber">(044) 222 5 222</span>-->
+            <!--<span class="inf time">24 години/ 7 днів на тиждень</span>-->
+            <!--<span class="inf freePizza">Безкоштовна доставка піци</span>-->
+            <!--<button type="button" class="btn btn-warning pull-right">Увійти</button>-->
+            <!--<hr class="inf"/>-->
+            <!--<span class="inf">Піца</span>-->
+            <!--</div>-->
+            <!--</div>-->
+            <div class="row text-center mainTitle">
+                <div class="allPizzas center-block" id="title">Усі піци</div>
+                <span class="allPizzasNumber" id="titleNumber">8</span>
+            </div>
+            <div class="row text-center" style="margin: 10px">
+                <button type="button" class="btn btn-primary " id="all">Усі</button>
+                <button type="button" class="btn btn-primary pizzaType" id="meat">М'ясні</button>
+                <button type="button" class="btn btn-primary pizzaType" id="pineapple">З ананасами</button>
+                <button type="button" class="btn btn-primary pizzaType" id="mushroom">З грибами</button>
+                <button type="button" class="btn btn-primary pizzaType" id="ocean">З морепродуктами</button>
+                <button type="button" class="btn btn-primary pizzaType" id="vega">Вега</button>
+            </div>
+            <div class="row" id="pizza_list">
+
+            </div>
+            <!--<div class="footer">-->
+                <!--<span class="label label-warning bottomSqrt">ЦЬОГО ТИЖНЯ НА ВСЕ<hr/>-20% </span>-->
+                <!--<span class="text-center" style="margin-left: 110px; display: inline-block">Pizza.22 - практичний проект в межах курсу Java-Script в Києво-Могилянській Академії-->
+                <!--<br/>-->
+                <!--Доставка піци не здійснюється-->
+                <!--</span>-->
+            <!--</div>-->
+            <%include common/rightPanel.ejs%>
+            <%include common/footer.ejs%>
+
+
+
+
+        </div>
+    </div>
 </div>
 
-<% include common/footer.ejs %>
+<!-- jQuery JavaScript -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!--Bootsrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!--Own JavaScript -->
+<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
+ 

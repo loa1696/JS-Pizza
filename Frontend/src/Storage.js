@@ -1,6 +1,3 @@
-/**
- * Created by Student on 03.02.2016.
- */
 var basil	=	require('basil.js');
 basil	=	new	basil();
 exports.get =	function(key)	{
